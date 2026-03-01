@@ -1,0 +1,9 @@
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: homelab
+servers: 1
+agents: 5
+ports:
+  - port: 80:80@loadbalancer
+  - port: 443:443@loadbalancer
